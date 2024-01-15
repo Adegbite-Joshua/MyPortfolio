@@ -57,7 +57,7 @@ const NavBar = () => {
               <label className='md:hidden ms-auto inline' htmlFor="navbarToggle"><span>X</span></label>
               <motion.li variants={children} initial='hidden' animate='show' className='my-3 md:my-auto'><Link href='/projects'><NavButton name='Projects' /></Link></motion.li>
               <motion.li variants={children} initial='hidden' animate='show' className='my-3 md:my-auto'><a href='/generalCV.docx' download><NavButton name='Resume' /></a></motion.li>
-              <motion.li variants={children} initial='hidden' animate='show' className='my-3 md:my-auto'><Link href='/'><NavButton name='Contact' /></Link></motion.li>
+              <motion.li variants={children} initial='hidden' animate='show' className='my-3 md:my-auto'><Link href='/contact'><NavButton name='Contact' /></Link></motion.li>
               <motion.li variants={children} initial='hidden' animate='show' className='my-3 md:my-auto'><Link href='/about'><NavButton name='About' /></Link></motion.li>
             </motion.ul>
           </div>
