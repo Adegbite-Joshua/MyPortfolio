@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 
 
-const Footer = () => {
+const HeroSection = () => {
     const variants = {
         hidden: { opacity: 0 },
         show: {
@@ -93,8 +93,8 @@ const Footer = () => {
 
                         <button className="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
                             <div className="w-full bg-white h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
-                                <span className="w-20 h-20 inline-block">
-                                    <img src='/image.png' className='h-48 w-48' />
+                                <span className=" w-52 h-36 inline-block">
+                                    <img src='/image.png' className='w-full h-full' />
                                 </span>
                             </div>
                         </button>
@@ -105,6 +105,6 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default HeroSection
 
 
