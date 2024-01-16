@@ -22,7 +22,7 @@ const ContactForm = () => {
                 <span className="heading">Get in touch</span>
                 <input placeholder="Name" type="text" className="input" />
                 <input placeholder="Email" id="mail" type="email" className="input" />
-                <textarea placeholder="Say Hello" rows={10} cols={30} id="message" name="message" className="textarea"></textarea>
+                <textarea placeholder="Your message..." rows={10} cols={30} id="message" name="message" className="textarea"></textarea>
                 <div className="button-container">
                     <div className="send-button">Send</div>
                     <div className="reset-button-container">

@@ -30,7 +30,9 @@ const GetInTouch = () => {
     return (
         <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className="container justify-center mx-auto grid grid-cols-1 md:grid-cols-2">
             <ContactForm />
-            <motion.img variants={children} className='mx-auto' src='/html.png' />
+            <div className='flex justify-center items-center'>
+              <motion.img variants={children} src='contact-image.png' />
+            </div>
         </motion.div>
     )
 }

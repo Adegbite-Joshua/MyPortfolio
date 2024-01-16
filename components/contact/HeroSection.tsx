@@ -2,12 +2,12 @@ import React from 'react'
 
 const HeroSection = () => {
     return (
-        <div className=''>
-            <div className=' from-transparent to-gray-500 '>
-                <h3 className='text-3xl'>Contact Me!</h3>
+        <div className='h-auto'>
+            <div className='mx-auto my-55'>
+                <h3 className='text-gradient-white text-6xl text-center my-5 text-white'>Contact Me!</h3>
             </div>
             <div className="relative mx-auto h-72 w-72 flex items-center justify-center">
-                <div className="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
+                <div className="profilecontact-Card_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
                     <button className="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
                         <span className="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] bg-white p-1">
                             <svg viewBox="0 0 128 128">
@@ -72,6 +72,24 @@ const HeroSection = () => {
                         </div>
                     </button>
                 </div>
+            </div>
+            <div className="contact-icons-card mx-auto my-5 gap-3">
+                <span>Contact Me</span>
+                <a className="social-link" href="#">
+                    <img src="github.svg" alt="" />
+                </a>
+                <a className="social-link" href="#">
+                    <img src="email.svg" alt="" />
+                </a>
+                <a className="social-link" href="#">
+                    <img src="linkedin.svg" alt="" />
+                </a>
+                <a className="social-link" href="#">
+                    <img src="whatsapp.svg" alt="" />
+                </a>
+                <a className="social-link" href="#">
+                    <img src="twitter.svg" alt="" />
+                </a>
             </div>
         </div>
     )

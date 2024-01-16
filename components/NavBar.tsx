@@ -5,10 +5,11 @@ import NavButton from './NavButton'
 import Link from 'next/link';
 import ToggleButton from './ToggleButton';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 
 const NavBar = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
   // const isActive = (pathname) => {
   //   return router.pathname === pathname;

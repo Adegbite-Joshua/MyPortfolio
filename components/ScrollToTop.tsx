@@ -50,6 +50,7 @@ const ScrollToTop = () => {
         className={`fixed bottom-6 right-6 bg-gray-400 bg-opacity-70 hover:bg-opacity-100 text-white p-2 rounded-md cursor-pointer ${isVisible ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-300 text-3xl h-14 w-8 flex justify-center`}
         onClick={scrollToTop}
+        id='NavButton'
       >
         {/* &#8593; */}
         <i>

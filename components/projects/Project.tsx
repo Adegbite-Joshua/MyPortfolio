@@ -3,21 +3,22 @@ import { motion } from 'framer-motion';
 
 
 const Project = ({siteLink, gitHubLink}:{siteLink: string, gitHubLink: string}) => {
-    const children = {
+    const variants = {
         hidden: {
-          opacity: 0,
-          x: -100
-        },
-        show: {
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1
+            opacity: 0,
+            x: -100
+          },
+          show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 1
+            }
           }
-        }
       }
+    
     return (
-        <motion.div variants={children} className="project-card overflow-hidden mx-auto">
+        <motion.div variants={variants} whileInView='show' className="project-card overflow-hidden mx-auto">
             <div className="project-card__img h-4/6">
                 <iframe src={siteLink} className='h-full w-full overflow-hiden' frameBorder="0" allowFullScreen></iframe>
             </div>
