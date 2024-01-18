@@ -75,19 +75,19 @@ const HeroSection = () => {
             </div>
             <div className="contact-icons-card mx-auto my-5 gap-3">
                 <span>Contact Me</span>
-                <a className="social-link" href="https://github.com/Adegbite-Joshua">
+                <a className="social-link" target='blank' href="https://github.com/Adegbite-Joshua">
                     <img src="github.svg" alt="" />
                 </a>
-                <a className="social-link" href="mailto:adegbitejoshua07@gmail.com">
+                <a className="social-link" target='blank' href="mailto:adegbitejoshua07@gmail.com">
                     <img src="email.svg" alt="" />
                 </a>
-                <a className="social-link" href="https://linkedin.com/in/adegbite-joshua-8a45a6257/">
+                <a className="social-link" target='blank' href="https://linkedin.com/in/adegbite-joshua-8a45a6257/">
                     <img src="linkedin.svg" alt="" />
                 </a>
-                <a className="social-link" href="https://wa.link/7ttoiw">
+                <a className="social-link" target='blank' href="https://wa.link/7ttoiw">
                     <img src="whatsapp.svg" alt="" />
                 </a>
-                <a className="social-link" href="https://twitter.com/adegbitejoshuaa">
+                <a className="social-link" target='blank' href="https://twitter.com/adegbitejoshuaa">
                     <img src="twitter.svg" alt="" />
                 </a>
             </div>
