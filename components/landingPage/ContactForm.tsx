@@ -17,7 +17,7 @@ const ContactForm = () => {
         }
       }
     return (
-        <motion.div variants={children} className="form-container bg-white bg-opacity-10">
+        <motion.div variants={children} className="order-2 md:order-none form-container bg-white bg-opacity-10">
             <div className="form">
                 <span className="heading">Get in touch</span>
                 <input placeholder="Name" type="text" className="input" />
