@@ -57,13 +57,13 @@ const TechnologyStacks = () => {
                         <div className="grid grid-cols-4 gap-3">
                             <StackIcon image="expressjs.png" />
                             <StackIcon image="firebase.webp" />
-                            <StackIcon image="flask.jfif" />
-                            <StackIcon image="java.jfif" />
+                            <StackIcon image="flask.png" />
+                            <StackIcon image="java.png" />
                             <StackIcon image="javascript.png" />
                             <StackIcon image="mongoDB.png" />
                             <StackIcon image="nodejs.png" />
-                            <StackIcon image="python.jfif" />
-                            <StackIcon image="spring-boot.jfif" />
+                            <StackIcon image="python.png" />
+                            <StackIcon image="springboot.png" />
                         </div>
                     </motion.div>
                     <motion.div variants={children} whileHover={{ scale: 1.2 }} className="mx-auto p-2 stack-card bg-white bg-opacity-10 relative">

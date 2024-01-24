@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Project from './Project'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { projects , projectProp} from '@/data/projects';
+import { projects } from '@/data/projects';
 
 
 const MyProjects = () => {
@@ -16,18 +16,12 @@ const MyProjects = () => {
     }
   }
 
-  // const [shortProjects, setShortProject] = useState<projectProp[]>([])
-
-  // useEffect(()=>{
-  //   setShortProject(projects.splice(0, 3))
-  // }, [projects])
-
   return (
     <div className='my-5 p-2 md:px-5'>
-      <h2 className='text-3xl text-bold text-white'>MY PROJECTS</h2>
+      <h2 className='text-3xl text-bold text-white my-3'>Pojects</h2>
       <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
-        {projects.map((project, index)=>(
-          <Project title={project.title} siteUrl={project.title} imageUrl={project.image_url} gitHubUrl={project.github_url} />
+        {projects.slice(0, 3).map((project, index)=>(
+          <Project title={project.title} siteUrl={project.webUrl} imageUrl={project.imageUrl} gitHubUrl={project.githubUrl} />
         ))}
       </motion.div>
       <Link href='/projects' className="button w-32 mx-auto my-3">

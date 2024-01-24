@@ -20,11 +20,11 @@ const Project = ({siteUrl, gitHubUrl, imageUrl, title}:{siteUrl: string, gitHubU
     return (
         <motion.div variants={variants} whileInView='show' className="project-card overflow-hidden mx-auto">
             <div className="project-card__img h-4/6">
-                <img src={siteUrl} className='h-full w-full overflow-hiden'></img>
+                <img src={imageUrl} className='h-full w-full overflow-hiden'></img>
             </div>
             <div className="project-card__descr-wrapper h-2/6">
                 <p className="project-card__title">
-                    lorem lorem lorem lorem lorem lorem lorem lorem lorem
+                    {title}
                 </p>                
                 <div className="project-card__links">
                     <div>

@@ -22,7 +22,7 @@ const MyProjects = () => {
       <motion.p variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='text-white my-3' >Welcome to the showcase of my passion and creativity! Below are some of the projects I've worked on, each representing a unique journey of learning and problem-solving. From web development to creative experiments, these projects reflect my commitment to craftsmanship and innovation. Feel free to explore and get a glimpse of the skills and ideas that drive my work.</motion.p>
       <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
         {projects.map((project) => (
-          <Project title={project.title} siteUrl={project.title} imageUrl={project.image_url} gitHubUrl={project.github_url} />
+          <Project title={project.title} siteUrl={project.webUrl} imageUrl={project.imageUrl} gitHubUrl={project.githubUrl} />
         ))}
       </motion.div>
     </div>
