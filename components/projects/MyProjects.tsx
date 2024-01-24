@@ -1,6 +1,8 @@
 import React from 'react'
-import Project from '../landingPage/Project'
+import Project from './Project'
 import { motion } from 'framer-motion';
+import { projects } from '@/data/projects';
+
 
 
 const MyProjects = () => {
@@ -19,16 +21,9 @@ const MyProjects = () => {
       <h2 className='text-3xl text-bold text-white'>MY PROJECTS</h2>
       <motion.p variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='text-white my-3' >Welcome to the showcase of my passion and creativity! Below are some of the projects I've worked on, each representing a unique journey of learning and problem-solving. From web development to creative experiments, these projects reflect my commitment to craftsmanship and innovation. Feel free to explore and get a glimpse of the skills and ideas that drive my work.</motion.p>
       <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
-        <Project siteLink='http://localhost:3000' gitHubLink="kjjiwuwiui" />
+        {projects.map((project) => (
+          <Project title={project.title} siteUrl={project.title} imageUrl={project.image_url} gitHubUrl={project.github_url} />
+        ))}
       </motion.div>
     </div>
   )
