@@ -44,13 +44,13 @@ export const projects: ProjectProps[] = [
     },
     {
         title: 'Weather App - A Weather Application',
-        imageUrl: '/tesla.png',
+        imageUrl: '/weatherapp.png',
         githubUrl: 'https://github.com/Adegbite-Joshua/WEATHER-APP',
         webUrl: 'https://adegbite-joshua.github.io/WEATHER-APP/',
     },
     {
         title: 'Ludo Design - A Design for Ludo with Grid',
-        imageUrl: '/tesla.png',
+        imageUrl: '/ludogame.png',
         githubUrl: 'https://github.com/Adegbite-Joshua/Ludo-Design',
         webUrl: 'https://personal-chat-app-ac897.web.app/',
     },
