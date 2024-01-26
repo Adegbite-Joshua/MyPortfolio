@@ -55,7 +55,9 @@ const NavBar = () => {
             </ul>
             <ToggleButton toggleSubNav={toggleSubNav} />
             <motion.ul variants={variants} initial='hidden' whileInView='show' transition={{duration: 1}} id='subNav' className='hidden mx-auto ms-12 w-52 md:w-auto md:mx-3 top-28 z-50 md:flex md:my-auto px-3 py-auto bg-gray-500 rounded-lg bg-opacity-80 md:bg-transparent md:bg-opacity-0 gap-x-5 md:gap-x-7 lg:gap-y-10'>
-              <label className='md:hidden ms-auto inline' htmlFor="navbarToggle"><span>X</span></label>
+              <div className='flex justify-end items-center'>
+              <label className='md:hidden ms-auto inline my-2' htmlFor="navbarToggle"><img src="/close.svg" className='h-5 w-5' alt="Close" /></label>
+              </div>
               <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><Link href='/projects'><NavButton name='Projects' /></Link></motion.li>
               <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><a href='/generalCV.docx' download><NavButton name='Resume' /></a></motion.li>
               <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><Link href='/contact'><NavButton name='Contact' /></Link></motion.li>

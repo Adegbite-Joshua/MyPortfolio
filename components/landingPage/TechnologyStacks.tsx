@@ -37,7 +37,7 @@ const TechnologyStacks = () => {
                 <motion.p variants={children} className='text-white my-3'>Welcome to Joshua's Full Stack Development Hub! I'm a seasoned full-stack developer with a passion for crafting seamless web experiences. From building responsive front-end interfaces with technologies like React to architecting robust back-end solutions using Node.js and Python, I bring a versatile skill set to the table. With a commitment to staying ahead in the tech landscape, I leverage top-notch tools like Git pipelines. Solving challenges creatively and fostering effective collaboration, I'm here to turn your ideas into exceptional digital solutions. Let's build something extraordinary together!</motion.p>
                 <div className="stack-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5 w-full justify-center">
                     <motion.div variants={children} whileHover={{ scale: 1.2 }} className="mx-auto p-2 stack-card h-60 bg-white bg-opacity-10 relative">
-                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto' src='/front-end.png'></img>
+                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto scaling' src='/front-end.png'></img>
                         <div className="grid grid-cols-4 gap-3">
                             <StackIcon image="html.png" />
                             <StackIcon image="css.png" />
@@ -53,7 +53,7 @@ const TechnologyStacks = () => {
                         </div>
                     </motion.div>
                     <motion.div variants={children} whileHover={{ scale: 1.2 }} className="mx-auto p-2 stack-card bg-white bg-opacity-10 relative">
-                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto' src='/backend.png'></img>
+                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto scaling' src='/backend.png'></img>
                         <div className="grid grid-cols-4 gap-3">
                             <StackIcon image="expressjs.png" />
                             <StackIcon image="firebase.webp" />
@@ -67,7 +67,7 @@ const TechnologyStacks = () => {
                         </div>
                     </motion.div>
                     <motion.div variants={children} whileHover={{ scale: 1.2 }} className="mx-auto p-2 stack-card bg-white bg-opacity-10 relative">
-                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto' src='/dev-ops.png'></img>
+                        <img className='h-12 w-12 rounded-circle absolute -top-5 bg-white bg-opacity-30 p-2 rounded-full mx-auto scaling' src='/dev-ops.png'></img>
                         <div className="grid grid-cols-4 gap-3">
                             <StackIcon image="git.png" />
                             <StackIcon image="github.png" />

@@ -60,11 +60,11 @@ const ContactForm = () => {
           message: values.message
         }
 
-        // emailjs.send(serviceId, templateId, templateParams, publicKey)
-        // emailjs.send(responseServiceId, responseTemplateId, responseTemplateParams, responsePublicKey)
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
+        emailjs.send(responseServiceId, responseTemplateId, responseTemplateParams, responsePublicKey)
 
         toast.success('Form submitted successfully!');
-        // formik.resetForm();
+        formik.resetForm();
       } catch (error) {
         toast.error('Error submitting form!');
         console.error('Error submitting form:', error);
@@ -115,7 +115,6 @@ const ContactForm = () => {
           </div>
         </form>
       </motion.div>
-      <ToastContainer position="top-right" className='p-2 h-12' autoClose={3000} hideProgressBar={false} />
     </>
   )
 }

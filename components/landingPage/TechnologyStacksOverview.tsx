@@ -35,16 +35,16 @@ const TechnologyStacksOverview = () => {
                 <p className="text-white">I am a proficient full-stack developer with expertise in front-end, back-end, and DevOps, ensuring end-to-end excellence in web development projects.</p>
                 <motion.div className="stack-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5 w-full justify-center">
                     <motion.div whileHover={{scale: 1.2}} variants={children} className="mx-auto stack-card bg-white bg-opacity-10">
-                        <img className='h-12 w-12 rounded-circle animate-bounce' src='/front-end.png'></img>
-                        <p className="second-text">Front End</p>
+                        <img className='h-12 w-12 rounded-circle scaling' src='/front-end.png'></img>
+                        <p className="second-text font-semibold">Front End</p>
                     </motion.div>
                     <motion.div whileHover={{scale: 1.2}} variants={children} className="mx-auto stack-card bg-white bg-opacity-10">
-                        <img className='h-12 w-12 rounded-circle' src='/backend.png'></img>
-                        <p className="second-text">Back End</p>
+                        <img className='h-12 w-12 rounded-circle scaling' src='/backend.png'></img>
+                        <p className="second-text font-semibold">Back End</p>
                     </motion.div>
                     <motion.div whileHover={{scale: 1.2}} variants={children} className="mx-auto stack-card bg-white bg-opacity-10">
-                        <img className='h-12 w-12 rounded-circle' src='/dev-ops.png'></img>
-                        <p className="second-text">Dev Ops</p>
+                        <img className='h-12 w-12 rounded-circle scaling' src='/dev-ops.png'></img>
+                        <p className="second-text font-semibold">Dev Ops</p>
                     </motion.div>
                 </motion.div>
             </motion.div>
