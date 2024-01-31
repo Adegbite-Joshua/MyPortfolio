@@ -45,7 +45,7 @@ const NavBar = () => {
   return (
     <>
       <AnimatePresence>
-        <div className='flex justify-center'>
+        <div className='flex justify-center px-3'>
           <motion.div initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} className='relative w-full md:w-auto my-2'>
             <div className='w-auto flex justify-between md:justify-center h-auto md:h-24 text-white bg-white bg-opacity-10 p-3 rounded-lg shadow-lg'>
               <ul className='flex my-auto md:px-0'>

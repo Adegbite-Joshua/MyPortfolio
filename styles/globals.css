@@ -43,8 +43,13 @@ body {
 }
 .background {
   background-image: url(/image.png);
-  background-size: 100% 100%;
-  background-position: cover;
+  background-size: 130% 100%;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .background {
+    background-size: 90% 100%;
+  }
 }
 
 /* LANDING PAGE */
