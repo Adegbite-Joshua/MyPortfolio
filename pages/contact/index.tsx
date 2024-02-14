@@ -6,10 +6,13 @@ import ContactForm from '@/components/landingPage/ContactForm'
 import NavBar from '@/components/NavBar'
 import ScrollToTop from '@/components/ScrollToTop'
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, {useEffect} from 'react'
 
 
 const index = () => {
+  useEffect(() => {
+    document.title = 'Contact | Joshua Adegbite';
+  }, [])
   return (
     <div>
         <NavBar/>

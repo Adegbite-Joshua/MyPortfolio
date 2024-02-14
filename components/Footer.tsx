@@ -53,11 +53,11 @@ const Footer = () => {
                     </motion.a>
 
                     <motion.a variants={children} target='blank' className="socialContainer containerFive" href="https://github.com/Adegbite-Joshua">
-                        <img className='socialSvg' src='github.png'/>
+                        <img className='socialSvg' src='/github.png'/>
                     </motion.a>
                     
                     <motion.a variants={children} target='blank' className="" href="tel:+2347015886456">
-                        <img className='h-10 w-10 inline' src='telephone.svg'/>
+                        <img className='h-10 w-10 inline' src='/telephone.svg'/>
                         <span>Telephone</span>
                     </motion.a>
                 </motion.div>

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/NavBar'
 import HeroSection from '@/components/landingPage/HeroSection'
@@ -10,10 +9,14 @@ import MyProjects from '@/components/landingPage/MyProjects'
 import GetInTouch from '@/components/landingPage/GetInTouch'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Full Stack Developer | Joshua Adegbite';
+  }, [])
   return (
     <div>
       <NavBar />

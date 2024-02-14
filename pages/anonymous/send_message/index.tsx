@@ -2,10 +2,11 @@
 
 import NavBar from '@/components/NavBar'
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '@/components/Footer';
 
 
 
@@ -103,6 +104,10 @@ const index = () => {
     }
   }
 
+  useEffect(() => {
+    document.title = 'Anonymous Message | Joshua Adegbite';
+  }, [])
+  
   return (
     <>
       <NavBar />
@@ -127,6 +132,7 @@ const index = () => {
           </motion.div>
         </form>
       </motion.div>
+      <Footer/>
     </>
   )
 }
