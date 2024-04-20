@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Full Stack Developer | Joshua Adegbite';
+    document.title = 'Full Stack Software Engineer | Joshua Adegbite';
   }, [])
   return (
     <div>
