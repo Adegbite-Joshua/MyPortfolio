@@ -57,7 +57,7 @@ const NavBar = () => {
                   <label className='md:hidden ms-auto inline my-2' htmlFor="navbarToggle"><img src="/close.svg" className='h-5 w-5' alt="Close" /></label>
                 </div>
                 <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><Link href='/projects'><NavButton name='Projects' /></Link></motion.li>
-                <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><a href='/adegbitejoshua.docx' download><NavButton name='Resume' /></a></motion.li>
+                <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><a href='/adegbitejoshua.pdf' download><NavButton name='Resume' /></a></motion.li>
                 <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><Link href='/contact'><NavButton name='Contact' /></Link></motion.li>
                 <motion.li variants={children} initial='hidden' animate='show' className='mx-5 md:mx-0 my-3 md:my-auto'><Link href='/about'><NavButton name='About' /></Link></motion.li>
               </motion.ul>
