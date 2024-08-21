@@ -18,7 +18,7 @@ const MyProjects = () => {
 
   return (
     <div className='my-5 p-2 md:px-5'>
-      <h2 className='text-3xl text-bold text-white my-3'>Pojects</h2>
+      <h2 className='text-3xl text-bold text-white my-3'>Projects</h2>
       <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
         {projects.slice(0, 3).map((project, index)=>(
           <Project title={project.title} siteUrl={project.webUrl} imageUrl={project.imageUrl} gitHubUrl={project.githubUrl} />

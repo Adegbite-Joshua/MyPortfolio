@@ -33,7 +33,7 @@ const TechnologyStacks = () => {
     return (
         <>
             <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='md:p-5'>
-                <h3 className="text-3xl text-white text-bold p-3">Tecnology Stacks</h3>
+                <h3 className="text-3xl text-white text-bold p-3">Technology Stacks</h3>
                 <motion.p variants={children} className='text-white my-3 p-3'>Welcome to Joshua's Full Stack Development Hub! I'm a seasoned full-stack developer with a passion for crafting seamless web experiences. From building responsive front-end interfaces with technologies like React to architecting robust back-end solutions using Node.js and Python, I bring a versatile skill set to the table. With a commitment to staying ahead in the tech landscape, I leverage top-notch tools like Git pipelines. Solving challenges creatively and fostering effective collaboration, I'm here to turn your ideas into exceptional digital solutions. Let's build something extraordinary together!</motion.p>
                 <div className="stack-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5 p-8 w-full justify-center">
                     <motion.div variants={children} whileHover={{ scale: 1.2 }} className="mx-auto p-2 my-4 stack-card h-60 bg-white bg-opacity-10 relative">
