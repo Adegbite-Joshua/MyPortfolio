@@ -41,11 +41,13 @@
 body {
   background-image: url(/background.jpg);
 }
+
 .background {
   background-image: url(/image.png);
   background-size: 130% 100%;
   background-position: center;
 }
+
 @media (min-width: 768px) {
   .background {
     background-size: 90% 100%;
@@ -53,6 +55,14 @@ body {
 }
 
 /* LANDING PAGE */
+
+.violet-gradient {
+  background: #804dee;
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%);
+}
 
 /*
  NAV BAR STYLING 
@@ -72,17 +82,18 @@ body {
   @apply px-3 py-2;
 }
 
-#NavButton:hover, #NavButton:focus {
+#NavButton:hover,
+#NavButton:focus {
   color: #ffffff;
   background: #008cff;
   border: 1px solid #008cff;
   text-shadow: 0 0 5px #ffffff,
-              0 0 10px #ffffff,
-              0 0 20px #ffffff;
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
   box-shadow: 0 0 5px #008cff,
-              0 0 20px #008cff,
-              0 0 50px #008cff,
-              0 0 100px #008cff;
+    0 0 20px #008cff,
+    0 0 50px #008cff,
+    0 0 100px #008cff;
 }
 
 .responsive-navbar {
@@ -139,7 +150,7 @@ body {
   top: 90%;
 }
 
-.toggle-container input:checked + .checkmark span:nth-child(1) {
+.toggle-container input:checked+.checkmark span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
   -webkit-transform: translateY(-50%) rotate(45deg);
@@ -148,7 +159,7 @@ body {
   -o-transform: translateY(-50%) rotate(45deg);
 }
 
-.toggle-container input:checked + .checkmark span:nth-child(2) {
+.toggle-container input:checked+.checkmark span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
   -webkit-transform: translateY(-50%) rotate(-45deg);
@@ -157,7 +168,7 @@ body {
   -o-transform: translateY(-50%) rotate(-45deg);
 }
 
-.toggle-container input:checked + .checkmark span:nth-child(3) {
+.toggle-container input:checked+.checkmark span:nth-child(3) {
   transform: translateX(-50px);
   -webkit-transform: translateX(-50px);
   -moz-transform: translateX(-50px);
@@ -270,10 +281,13 @@ body {
 
 @keyframes scaleInOut {
   0% {
-    transform: scale(1); /* Initial scale */
+    transform: scale(1);
+    /* Initial scale */
   }
+
   100% {
-    transform: scale(1.2); /* Final scale */
+    transform: scale(1.2);
+    /* Final scale */
   }
 }
 
@@ -309,7 +323,7 @@ body {
   transform: scale(1.1, 1.1);
 }
 
-.stack-cards:hover > .stack-card:not(:hover) {
+.stack-cards:hover>.stack-card:not(:hover) {
   filter: blur(2px);
   transform: scale(0.9, 0.9);
 }
@@ -360,12 +374,10 @@ body {
   position: absolute;
   width: 100px;
   height: 100%;
-  background-image: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0) 70%
-  );
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
   top: 0;
   left: -100px;
   opacity: 0.6;
@@ -412,7 +424,7 @@ body {
 .project-card:hover {
   transform: scale(1.02);
   box-shadow: -9px 9px 18px #5a5a5a,
-              9px -9px 18px #c0bdbd;
+    9px -9px 18px #c0bdbd;
 }
 
 .project-card__img {
@@ -458,6 +470,79 @@ body {
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
+}
+
+.orange-text-gradient {
+  background: #f12711;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #f12711,
+      #f5af19);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #f12711,
+      #f5af19);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #11998e,
+      #38ef7d);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #11998e,
+      #38ef7d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #2f80ed,
+      #56ccf2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #2f80ed,
+      #56ccf2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #ec008c,
+      #fc6767);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #ec008c,
+      #fc6767);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
 }
 
 /* .project-card__links .project-link:hover {
@@ -511,7 +596,7 @@ body {
   /* font-weight: bold; */
   transition: all 0.2s ease-in-out;
   border-left: 1px solid transparent;
-  box-shadow:  none !important;
+  box-shadow: none !important;
 }
 
 .form-container .form .input:focus {
@@ -609,28 +694,34 @@ body {
   overflow: hidden;
   transition-duration: .3s;
 }
+
 /* instagram*/
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: .3s;
 }
+
 /* twitter*/
 .containerTwo:hover {
   background-color: #00acee;
   transition-duration: .3s;
 }
+
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: .3s;
 }
+
 /* Whatsapp*/
 .containerFour:hover {
   background-color: #128C7E;
   transition-duration: .3s;
 }
+
 /* Whatsapp*/
-.containerFive:hover, .containerSix:hover {
+.containerFive:hover,
+.containerSix:hover {
   background-color: white;
   transition-duration: .3s;
 }
@@ -678,14 +769,15 @@ body {
   align-items: center;
   justify-content: center;
   background: #e7e7e7;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
   height: 50px;
   width: 300px;
 }
 
-.contact-icons-card::before, .contact-icons-card::after {
+.contact-icons-card::before,
+.contact-icons-card::after {
   position: absolute;
   display: flex;
   align-items: center;
@@ -710,7 +802,7 @@ body {
 }
 
 .contact-icons-card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .contact-icons-card:hover span {

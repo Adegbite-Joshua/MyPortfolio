@@ -29,7 +29,7 @@ const AboutMe = () => {
   return (
     <div className='my-5 bg-white bg-opacity-30 container mx-auto p-2 md:p-5'>
       <motion.div variants={variants} initial='hidden' animate='show' id='subNav' transition={{ duration: 2 }} className='w-full md:w-5/6 mx-auto'>
-        <motion.h3 variants={children} className='text-3xl font-semibold text-center underline cursor-pointer'>
+        <motion.h3 variants={children} className='text-3xl font-semibold text-center underline'>
           About Me
         </motion.h3>
         <motion.p variants={children} className='font-semibold'>

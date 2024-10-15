@@ -110,7 +110,7 @@ const index = () => {
   
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <ToastContainer position="top-right" className='p-2 h-12' autoClose={3000} hideProgressBar={false} />
       <motion.div variants={variants} initial='hidden' whileInView='show' className='h-full container mx-auto my-10'>
         <form onSubmit={sendMessage} className='w-5/6 md:w-3/6 mx-auto text-white bg-white bg-opacity-10 p-7 md:p-10 rounded-lg'>

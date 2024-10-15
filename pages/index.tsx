@@ -10,6 +10,7 @@ import GetInTouch from '@/components/landingPage/GetInTouch'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import { useEffect } from "react";
+import { StarsCanvas } from '@/components/canvas'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,12 +22,15 @@ export default function Home() {
     <div>
       <NavBar />
       <HeroSection />
-      <TechnologyStacksOverview/>
-      <TechnologyStacks/>
-      <MyProjects/>
-      <GetInTouch/>
-      <Footer/>
-      <ScrollToTop/>
+      <TechnologyStacksOverview />
+      <TechnologyStacks />
+      <MyProjects />
+      <div className="relative z-0">
+        <GetInTouch />
+        <StarsCanvas/>
+      </div>
+      <Footer />
+      <ScrollToTop />
     </div>
   )
 }

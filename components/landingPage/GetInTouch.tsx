@@ -2,6 +2,7 @@ import React from 'react'
 import ContactForm from './ContactForm'
 import { motion } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
+import { EarthCanvas } from '../canvas';
 
 
 const GetInTouch = () => {
@@ -32,9 +33,10 @@ const GetInTouch = () => {
     <>
       <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className="container justify-center mx-auto grid grid-cols-1 md:grid-cols-2">
         <ContactForm />
-        <div className='order-1 md:order-none flex justify-center items-center'>
+        {/* <div className='order-1 md:order-none flex justify-center items-center'>
           <motion.img variants={children} src='contact-image.png' />
-        </div>
+        </div> */}
+        <EarthCanvas/>
       </motion.div>
       <ToastContainer position="top-right" className='p-2 h-12' autoClose={3000} hideProgressBar={false} />
     </>

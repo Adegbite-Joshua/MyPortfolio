@@ -60,8 +60,8 @@ const ContactForm = () => {
           message: values.message
         }
 
-        emailjs.send(serviceId, templateId, templateParams, publicKey)
-        emailjs.send(responseServiceId, responseTemplateId, responseTemplateParams, responsePublicKey)
+        await emailjs.send(serviceId, templateId, templateParams, publicKey)
+        await emailjs.send(responseServiceId, responseTemplateId, responseTemplateParams, responsePublicKey)
 
         toast.success('Form submitted successfully!');
         formik.resetForm();
