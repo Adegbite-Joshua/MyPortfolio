@@ -10,7 +10,6 @@ import GetInTouch from '@/components/landingPage/GetInTouch'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import { useEffect } from "react";
-import { StarsCanvas } from '@/components/canvas'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,16 +18,13 @@ export default function Home() {
     document.title = 'Full Stack Software Engineer | Joshua Adegbite';
   }, [])
   return (
-    <div>
+    <div id='home' className='relative'>
       <NavBar />
       <HeroSection />
       <TechnologyStacksOverview />
       <TechnologyStacks />
       <MyProjects />
-      <div className="relative z-0">
-        <GetInTouch />
-        <StarsCanvas/>
-      </div>
+      <GetInTouch />
       <Footer />
       <ScrollToTop />
     </div>

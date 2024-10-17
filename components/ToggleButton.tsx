@@ -1,16 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-const ToggleButton = ({toggleSubNav}: {toggleSubNav: ()=>void}) => {
-    return (
-        <label onClick={toggleSubNav} className="toggle-container md:hidden my-auto">
-            <input id='navbarToggle' type="checkbox" />
-                <div onClick={toggleSubNav}  className="checkmark">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-        </label>
-    )
+interface ToggleButtonProps {
+  toggleSubNav: () => void;
+  isSubNavVisible: boolean;
 }
 
-export default ToggleButton
+const ToggleButton: React.FC<ToggleButtonProps> = ({ toggleSubNav, isSubNavVisible }) => {
+  return (
+    <label className="toggle-container md:hidden my-auto ms-32">
+      <input
+        id="navbarToggle"
+        type="checkbox"
+        checked={isSubNavVisible}
+        onChange={toggleSubNav}
+      />
+      <div className="checkmark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </label>
+  );
+};
+
+export default ToggleButton;

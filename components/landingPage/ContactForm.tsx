@@ -5,6 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 
 
@@ -119,6 +120,6 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
+export default SectionWrapper(ContactForm, 'contact')
 
 

@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Project from './Project'
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { projects } from '@/data/projects';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 
 const MyProjects = () => {
@@ -18,20 +18,17 @@ const MyProjects = () => {
 
   return (
     <div className='my-5 p-2 md:px-5'>
-      <h2 className='text-3xl text-bold text-white my-3'>Projects</h2>
-      <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
-        {projects.slice(0, 3).map((project, index)=>(
+      <p className='text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]'>Project Showcase</p>
+      <h2 className='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>Projects</h2>
+      <motion.p className='text-[#dfd9ff] mt-4 text-[17px] max-w-3xl leading-[30px]'>This section highlights a selection of projects that demonstrate my skills and experience through real-world applications. Each project includes a brief description, along with links to the code repositories and live demos. These showcases reflect my capability to tackle complex challenges, work with diverse technologies, and effectively manage project lifecycles. Dive in to see how I transform ideas into functional, impactful solutions!</motion.p>
+      <div className="stack-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5 p-8 w-full justify-center"></div>
+      <motion.div variants={variants} initial='hidden' whileInView='show' transition={{ duration: 1 }} className='flex flex-wrap shrink-0 grow-0 gap-y-16 gap-4 justify-center items-center'>
+        {projects.map((project, index) => (
           <Project project={project} />
         ))}
       </motion.div>
-      <Link href='/projects' className="button w-32 mx-auto my-3">
-        More
-        <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
-          <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
-        </svg>
-      </Link>
     </div>
   )
 }
 
-export default MyProjects
+export default SectionWrapper(MyProjects, 'projects')

@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 type Props = {
-  name: string
+  name: string;
 }
 
 const NavButton: React.FC<Props> = ({name}) => {
