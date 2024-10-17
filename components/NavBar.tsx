@@ -112,13 +112,13 @@ const NavBar = () => {
                 </div>
          
                 <motion.li variants={childVariants} className="mx-5 md:mx-0 my-3 md:my-auto">
-                  <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
-                    <NavButton name="About" />
+                  <a href="/Joshua Adegbite Resume.pdf" download>
+                    <NavButton name="Resume" />
                   </a>
                 </motion.li>
                 <motion.li variants={childVariants} className="mx-5 md:mx-0 my-3 md:my-auto">
-                  <a href="/Joshua Adegbite Resume.pdf" download>
-                    <NavButton name="Resume" />
+                  <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
+                    <NavButton name="About" />
                   </a>
                 </motion.li>
                 <motion.li variants={childVariants} className="mx-5 md:mx-0 my-3 md:my-auto">
