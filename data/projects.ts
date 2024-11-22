@@ -81,15 +81,15 @@ export const projects: ProjectProps[] = [
         description: 'A fintech web application that provides banking services with a focus on user experience and security.',
         tags: [
             {
-                name: 'react',
+                name: 'html',
                 color: 'blue-text-gradient',
             },
             {
-                name: 'nodejs',
+                name: 'bootstrap',
                 color: 'green-text-gradient',
             },
             {
-                name: 'mysql',
+                name: 'javascript',
                 color: 'pink-text-gradient',
             },
         ],
@@ -102,15 +102,15 @@ export const projects: ProjectProps[] = [
         description: 'An application designed for managing and tracking tasks effectively.',
         tags: [
             {
-                name: 'react',
+                name: 'html',
                 color: 'blue-text-gradient',
             },
             {
-                name: 'nodejs',
+                name: 'bootstrap',
                 color: 'green-text-gradient',
             },
             {
-                name: 'tailwind',
+                name: 'javascript',
                 color: 'pink-text-gradient',
             },
         ],
@@ -123,7 +123,7 @@ export const projects: ProjectProps[] = [
         description: 'A clone of the Amazon shopping platform that mimics its features and user interface.',
         tags: [
             {
-                name: 'react',
+                name: 'html',
                 color: 'blue-text-gradient',
             },
             {
@@ -131,12 +131,12 @@ export const projects: ProjectProps[] = [
                 color: 'green-text-gradient',
             },
             {
-                name: 'scss',
+                name: 'bootstrap',
                 color: 'pink-text-gradient',
             },
         ],
         source_code_link: 'https://github.com/Adegbite-Joshua/AMAZON-CLONE',
-        web_url: 'https://personal-chat-app-ac897.web.app/',
+        web_url: 'https://proade-3e60a.web.app/',
         imageUrl: '/amazon.png',
     },
     {
@@ -164,6 +164,10 @@ export const projects: ProjectProps[] = [
         name: 'Weather App - A Weather Application',
         description: 'An application that provides real-time weather updates and forecasts.',
         tags: [
+            {
+                name: 'html',
+                color: 'blue-text-gradient',
+            },
             {
                 name: 'javascript',
                 color: 'blue-text-gradient',

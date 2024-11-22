@@ -18,7 +18,7 @@ export default function Home() {
     document.title = 'Full Stack Software Engineer | Joshua Adegbite';
   }, [])
   return (
-    <div id='home' className='relative'>
+    <main id='home' className='relative'>
       <NavBar />
       <HeroSection />
       <TechnologyStacksOverview />
@@ -27,6 +27,6 @@ export default function Home() {
       <GetInTouch />
       <Footer />
       <ScrollToTop />
-    </div>
+    </main>
   )
 }

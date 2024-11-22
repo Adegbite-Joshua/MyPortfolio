@@ -1,5 +1,8 @@
+// next.config.cjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'build',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.m?js/,
@@ -11,4 +14,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
